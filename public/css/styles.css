@@ -1,0 +1,18 @@
+body {
+    background: #f8f5e8;
+}
+
+.themeFontColor {
+    color: #ff7f51;
+}
+
+tr {
+    cursor: pointer;
+}
+
+.img-logo {
+    width: 100%;
+    height: auto;
+    max-width: 11.25rem;
+}
+
