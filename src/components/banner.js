@@ -1,13 +1,15 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import styles from './banner.module.scss';
 
-const Banner = () => {
+
+const Banner = ({headerText}) => {
     return (
-      <header className="row mb-4 mt-3">
+      <header className={`row mb-4 mt-3 ${styles.contain}`}>
         <div className="col-3">
-            <img src="/logo.png" alt="Terranova logo" class="img-logo" />
+            <img src="/logo.png" alt="Terranova logo" className="img-logo" />
         </div>
-        <div className="col-9 d-flex align-items-center">
-            <h4 className="align-middle">Providing houses all over the world.</h4>
+        <div className={`${styles.subtitle} col-9 d-flex align-items-center`}>
+            <h4 className="align-middle">{headerText}</h4>
         </div>
       </header>
     );
