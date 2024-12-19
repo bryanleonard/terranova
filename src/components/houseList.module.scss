@@ -1,5 +1,6 @@
 .houseList {
     
+   
     thead {
         border-bottom: 2px solid #000;
 
@@ -7,6 +8,28 @@
             background: transparent;
             cursor: default;
             font-weight: 600;
+            box-shadow: none !important;
         }
     }
+
+    tbody {
+        tr {
+            &:hover {
+
+                td {
+                    background: rgb(255 255 255 / 80%) !important; 
+                }
+    
+            }
+            
+            td {
+                background: rgb(255 255 255 / 50%);
+                box-shadow: none !important;
+            }
+            
+            
+        }
+    }   
+
+
 }

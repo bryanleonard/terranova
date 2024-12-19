@@ -8,7 +8,7 @@ const Banner = ({headerText}) => {
         <div className="col-3">
             <img src="/logo.png" alt="Terranova logo" className="img-logo" />
         </div>
-        <div className={`${styles.subtitle} col-9 d-flex align-items-center`}>
+        <div className={`${styles.subtitle} theme-text-color col-9 d-flex align-items-center`}>
             <h4 className="align-middle">{headerText}</h4>
         </div>
       </header>
