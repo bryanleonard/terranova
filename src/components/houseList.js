@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import styles from './houseList.module.scss';
 import HouseRow from './houseRow';
 
-const houses = [
+const houseArray = [
     {
         id: 1,
         address: "12 Valley of Kings, Geneva",
@@ -24,6 +25,20 @@ const houses = [
 
 
 const HouseList = () => {
+    const [houses, setHouses] = useState(houseArray);
+
+    const addHouse = () => {
+        setHouses([
+            ...houses,
+            {
+                id: houses.length + 1,
+                address: "32 Valley Way, Newark",
+                country: "United States of America",
+                price: 23000
+            }
+        ])
+    }
+
     return (
         <>
             <div className="row mb-2">
@@ -47,6 +62,8 @@ const HouseList = () => {
                     ))}
                 </tbody>
             </table>
+            
+            <button className="btn btn-primary" onClick={addHouse}>Add</button>
         </>
     )
 };

@@ -7,6 +7,11 @@ This is a [React.js](https://react.dev) / [Next.js](https://nextjs.org) project 
 
 ## Getting Started
 
+Install necessary packages:
+```bash
+npm install
+```
+
 Run the development server:
 
 ```bash
