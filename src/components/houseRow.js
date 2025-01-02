@@ -1,13 +1,11 @@
 import formatCurrency from "../helpers/formatCurrency";
 
-const HouseRow = ({house}) => {
+const HouseRow = ( { props } ) => {
     return (
         <tr>
-            <td>{house.address}</td>
-            <td>{house.country}</td>
-            <td>{formatCurrency.format(house.price)}</td>
-            {/* <td>{house.price}</td> */}
-
+            <td>{props.address}</td>
+            <td>{props.country}</td>
+            <td>{formatCurrency.format(props.price)}</td>
         </tr>
     )
 }

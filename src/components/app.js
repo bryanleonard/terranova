@@ -8,7 +8,7 @@ const App = () => {
 			<Head>
 				<title>TERRANOVA</title>
 			</Head>
-			<Banner headerText="Providing houses all over the world."/>
+			<Banner>Providing houses all over the world!</Banner>
 			<HouseList />
 		</>
 	)

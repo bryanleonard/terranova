@@ -43,7 +43,7 @@ const HouseList = () => {
 			<div className="row mb-2">
 				<div className="col">
 					<h5 className="theme-text-color text-center">
-						Currently on the market
+						Properties on the market
 					</h5>
 				</div>
 			</div>
@@ -58,11 +58,9 @@ const HouseList = () => {
 							<td>Asking Price</td>
 						</tr>
 					</thead>
-
-					<tbody>
-						{houses.map((h) => (
-							<HouseRow key={h.id} house={h} />
-						))}
+					
+					<tbody>	
+						{houses.map(h => <HouseRow key={h.id} props={h} />)}
 					</tbody>
 				</table>
 
