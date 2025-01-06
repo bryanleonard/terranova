@@ -1,30 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./houseList.module.scss";
-import HouseRow from "./houseRow";
+import HouseRow, { HouseRowMem } from "./houseRow";
 
-const houseArray = [
-	{
-		id: 1,
-		address: "12 Valley of Kings, Geneva",
-		country: "Switzerland",
-		price: 900000,
-	},
-	{
-		id: 2,
-		address: "89 Road of Forks, Bern",
-		country: "Switzerland",
-		price: 500000,
-	},
-	{
-		id: 3,
-		address: "123 Elm St, Ohio",
-		country: "United States of America",
-		price: 250000,
-	},
-];
 
 const HouseList = () => {
-	const [houses, setHouses] = useState(houseArray);
+	const [houses, setHouses] = useState([]);
+
+	useEffect(() => {
+		const getHouses = async () => {
+			const resp = await fetch("/api/houses");
+			const data =  await resp.json();
+			setHouses(data);
+		}
+		getHouses();
+	}, []);
 
 	const addHouse = () => {
 		setHouses([
@@ -42,8 +31,8 @@ const HouseList = () => {
 		<>
 			<div className="row mb-2">
 				<div className="col">
-					<h5 className="theme-text-color text-center">
-						Properties on the market
+					<h5 className="theme-text-color-secondary text-center">
+						Properties on the market.
 					</h5>
 				</div>
 			</div>
@@ -60,11 +49,13 @@ const HouseList = () => {
 					</thead>
 					
 					<tbody>	
-						{houses.map(h => <HouseRow key={h.id} props={h} />)}
+						{houses.map(h => (
+							<HouseRowMem key={h.id} props={h} />)
+						)}
 					</tbody>
 				</table>
 
-				<button className="btn btn-primary btn-inline" onClick={addHouse}>
+				<button className="btn btn-primary btn-theme btn-inline" onClick={addHouse}>
 					Add
 				</button>
 

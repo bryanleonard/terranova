@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Banner from './banner';
 import HouseList from './houseList';
 
+
 const App = () => {
 	return  (
 		<>

@@ -3,7 +3,12 @@ body {
 }
 
 .theme-text-color {
-    color: #ff7f51;
+    color: #92673e;
+    /* #394c3c; */
+}
+
+.theme-text-color-secondary {
+    color: #92673e;
 }
 
 tr {
@@ -17,3 +22,31 @@ tr {
     background-color: #fff;
 }
 
+.btn-theme {
+    background-color: #92673e;
+    border-color: #7c5634;
+    color: #ffffff;
+  }
+  
+  .btn-theme:hover,
+  .btn-theme:focus {
+    background-color: #7c5634;
+    border-color: #6a482c;
+    color: #ffffff;
+  }
+  
+  .btn-theme:active {
+    background-color: #6a482c;
+    border-color: #583b24;
+    color: #ffffff;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  }
+  
+  .btn-theme.disabled,
+  .btn-theme:disabled {
+    background-color: #92673e;
+    border-color: #7c5634;
+    color: #e0e0e0;
+    opacity: 0.65;
+  }
+  

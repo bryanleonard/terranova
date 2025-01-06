@@ -1,0 +1,46 @@
+{
+  "houses": [
+    {
+      "id": 1,
+      "address": "34 Pine Grove, Oslo",
+      "country": "Norway",
+      "price": 750000,
+      "description": "A charming Scandinavian retreat nestled in a quiet neighborhood, featuring modern interiors and a spacious garden."
+    },
+    {
+      "id": 2,
+      "address": "567 Cedar Avenue, Auckland",
+      "country": "New Zealand",
+      "price": 680000,
+      "description": "A contemporary family home with breathtaking views and easy access to local amenities and schools."
+    },
+    {
+      "id": 3,
+      "address": "890 Sunset Blvd, Los Angeles",
+      "country": "United States of America",
+      "price": 1400000,
+      "description": "A luxurious estate in the heart of Los Angeles, boasting a pool, high ceilings, and stunning city views."
+    },
+    {
+      "id": 4,
+      "address": "123 King Street, Melbourne",
+      "country": "Australia",
+      "price": 950000,
+      "description": "A modern urban oasis with sleek design, a private courtyard, and a prime location near vibrant city life."
+    },
+    {
+      "id": 5,
+      "address": "678 Birch Lane, Dublin",
+      "country": "Ireland",
+      "price": 560000,
+      "description": "A cozy Irish home with charming architecture, a spacious backyard, and a short walk to local pubs and shops."
+    },
+    {
+      "id": 6,
+      "address": "456 Elmwood Drive, Cape Town",
+      "country": "South Africa",
+      "price": 480000,
+      "description": "A delightful family home with mountain views, a sunny patio, and located near top-rated schools."
+    }
+  ]
+}
