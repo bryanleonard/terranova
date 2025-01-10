@@ -22,6 +22,10 @@ tr {
     background-color: #fff;
 }
 
+.text-theme {
+  color: #92673e !important;
+}
+
 .btn-theme {
     background-color: #92673e;
     border-color: #7c5634;

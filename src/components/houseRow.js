@@ -2,11 +2,17 @@ import React from "react";
 import formatCurrency from "../helpers/formatCurrency";
 
 const HouseRow = ( { props } ) => {
+
+    let priceClass;
+    if (props.price < 500000) {
+        priceClass = "text-theme"
+    }
+
     return (
         <tr>
             <td>{props.address}</td>
             <td>{props.country}</td>
-            <td>{formatCurrency.format(props.price)}</td>
+            <td className={`${props.price >= 600000 ? "text-theme" : ""}`}>{formatCurrency.format(props.price)}</td>
         </tr>
     )
 }
