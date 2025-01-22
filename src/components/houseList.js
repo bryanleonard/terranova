@@ -3,7 +3,7 @@ import styles from "./houseList.module.scss";
 import HouseRow, { HouseRowMem } from "./houseRow";
 
 
-const HouseList = () => {
+const HouseList = ({selectedHouse}) => {
 	const [houses, setHouses] = useState([]);
 
 	useEffect(() => {
@@ -32,7 +32,7 @@ const HouseList = () => {
 			<div className="row mb-2">
 				<div className="col">
 					<h5 className="theme-text-color-secondary text-center">
-						Properties on the market.
+						Your search starts here.
 					</h5>
 				</div>
 			</div>
@@ -50,7 +50,7 @@ const HouseList = () => {
 					
 					<tbody>	
 						{houses.map(h => (
-							<HouseRowMem key={h.id} props={h} />)
+							<HouseRowMem key={h.id} props={h} selectHouse={selectedHouse} />)
 						)}
 					</tbody>
 				</table>

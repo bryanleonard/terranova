@@ -5,42 +5,48 @@
       "address": "34 Pine Grove, Oslo",
       "country": "Norway",
       "price": 750000,
-      "description": "A charming Scandinavian retreat nestled in a quiet neighborhood, featuring modern interiors and a spacious garden."
+      "description": "A charming Scandinavian retreat nestled in a quiet neighborhood, this home combines modern interiors with traditional Norwegian touches. The spacious garden offers ample space for outdoor relaxation, while the surrounding area is perfect for nature enthusiasts seeking peace and tranquility. Conveniently located near local shops and public transportation, it’s an ideal blend of comfort and accessibility.",
+      "photo": "277667"
     },
     {
       "id": 2,
       "address": "567 Cedar Avenue, Auckland",
       "country": "New Zealand",
       "price": 680000,
-      "description": "A contemporary family home with breathtaking views and easy access to local amenities and schools."
+      "description": "This contemporary family home boasts breathtaking panoramic views, making every sunrise and sunset a treat. Its thoughtfully designed layout ensures functionality and comfort, with modern appliances and spacious living areas. Situated in a family-friendly neighborhood, it provides easy access to excellent schools, parks, and vibrant local amenities.",
+      "photo": "462358"
     },
     {
       "id": 3,
       "address": "890 Sunset Blvd, Los Angeles",
       "country": "United States of America",
       "price": 1400000,
-      "description": "A luxurious estate in the heart of Los Angeles, boasting a pool, high ceilings, and stunning city views."
+      "description": "Nestled in the heart of Los Angeles, this luxurious estate epitomizes the glitz and glamour of Hollywood living. With a sparkling pool, expansive high ceilings, and floor-to-ceiling windows offering stunning city views, this home is an entertainer's dream. The property is situated close to the city's finest dining, shopping, and entertainment, making it a prime location for those who enjoy an upscale lifestyle.",
+      "photo": "259600"
     },
     {
       "id": 4,
       "address": "123 King Street, Melbourne",
       "country": "Australia",
       "price": 950000,
-      "description": "A modern urban oasis with sleek design, a private courtyard, and a prime location near vibrant city life."
+      "description": "This modern urban oasis features sleek architectural design and luxurious finishes throughout. The private courtyard is perfect for outdoor dining or quiet evenings, while the open-plan living area maximizes light and space. Located in the heart of Melbourne, it’s just steps away from the city’s thriving cultural and culinary scene, making it a perfect blend of style and convenience.",
+      "photo": "534182"
     },
     {
       "id": 5,
       "address": "678 Birch Lane, Dublin",
       "country": "Ireland",
       "price": 560000,
-      "description": "A cozy Irish home with charming architecture, a spacious backyard, and a short walk to local pubs and shops."
+      "description": "A delightful Irish home with charming traditional architecture, this property offers the warmth and character of Dublin living. The spacious backyard is ideal for gardening, family gatherings, or simply enjoying the outdoors. Located a short walk from local pubs, shops, and community parks, it provides a perfect mix of quaint charm and modern convenience.",
+      "photo": "164558"
     },
     {
       "id": 6,
       "address": "456 Elmwood Drive, Cape Town",
       "country": "South Africa",
       "price": 480000,
-      "description": "A delightful family home with mountain views, a sunny patio, and located near top-rated schools."
+      "description": "This inviting family home is surrounded by stunning mountain views and filled with natural light. The sunny patio is ideal for entertaining or enjoying Cape Town’s mild climate, while the nearby top-rated schools make it an excellent choice for families. Situated in a peaceful neighborhood, it’s close to local markets, cafes, and outdoor attractions, offering a vibrant yet serene lifestyle.",
+      "photo": null
     }
   ]
 }
