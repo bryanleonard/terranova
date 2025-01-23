@@ -3,23 +3,15 @@ import Banner from './banner';
 import HouseList from './houseList';
 import React, { useState } from 'react';
 import House from './house';
-// import getRandomSlogan from '../helpers/sloganGenerator';
-
-
-// export async function generateStaticParams() {
-// 	const slogan = getRandomSlogan();
-// 	return {
-// 		props: {
-// 			slogan,
-// 		},
-// 	};
-// }
-
 
 const App = () => {
 
 	//const randomSlogan = "Test slogan – your dream home!";
 	const [selectedHouse, setSelectedHouse] = useState();
+	const setSelectedHouseWrapper = (house) => {
+		// can add data validation and checks here...
+		setSelectedHouse(house);
+	}
 	
 	return  (
 		<>
@@ -29,7 +21,7 @@ const App = () => {
 			
 			<Banner />
 			
-			{ selectedHouse ? <House house={selectedHouse} /> : <HouseList selectedHouse={setSelectedHouse} />}
+			{ selectedHouse ? <House house={selectedHouse} /> : <HouseList selectedHouse={setSelectedHouseWrapper} />}
 		</>
 	)
 }

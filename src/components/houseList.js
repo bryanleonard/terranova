@@ -1,19 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./houseList.module.scss";
 import HouseRow, { HouseRowMem } from "./houseRow";
+import useHouses from "@/hooks/useHouses";
 
 
 const HouseList = ({selectedHouse}) => {
-	const [houses, setHouses] = useState([]);
-
-	useEffect(() => {
-		const getHouses = async () => {
-			const resp = await fetch("/api/houses");
-			const data =  await resp.json();
-			setHouses(data);
-		}
-		getHouses();
-	}, []);
+	const { houses, setHouses } = useHouses();
 
 	const addHouse = () => {
 		setHouses([
