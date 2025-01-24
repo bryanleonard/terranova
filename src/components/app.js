@@ -3,6 +3,8 @@ import Banner from './banner';
 import HouseList from './houseList';
 import React, { useState } from 'react';
 import House from './house';
+import Loadal from './loadal';
+import loadalStatus from '@/helpers/loadalStatus';
 
 const App = () => {
 

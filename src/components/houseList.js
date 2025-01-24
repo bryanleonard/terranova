@@ -2,10 +2,16 @@ import React from "react";
 import styles from "./houseList.module.scss";
 import HouseRow, { HouseRowMem } from "./houseRow";
 import useHouses from "@/hooks/useHouses";
+import loadalStatus from "@/helpers/loadalStatus";
+import Loadal from "./loadal";
 
 
 const HouseList = ({selectedHouse}) => {
-	const { houses, setHouses } = useHouses();
+	const { houses, setHouses, loadalState } = useHouses();
+
+	if (loadalState !== loadalStatus.loaded) {
+		return <Loadal loadalState={ loadalState } />;
+	}
 
 	const addHouse = () => {
 		setHouses([
@@ -21,7 +27,7 @@ const HouseList = ({selectedHouse}) => {
 
 	return (
 		<>
-			<div className="row mb-2">
+			<div className="row mb-2 blink">
 				<div className="col">
 					<h5 className="theme-text-color-secondary text-center">
 						Your search starts here.
