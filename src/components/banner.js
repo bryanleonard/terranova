@@ -1,9 +1,13 @@
 import Link from "next/link";
 import styles from "./banner.module.scss";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import slogans from "@/helpers/slogans";
+import { navigationContext } from "./app";
+import navValues from "@/helpers/navValues";
 
 const Banner = () => {
+const { navigate } = useContext(navigationContext);
+
 	const [randomSlogan, setRandomSlogan] = useState('');
 
 	useEffect(() => {
@@ -19,6 +23,7 @@ const Banner = () => {
 						src="/logo.png"
 						alt="TERRANOVA logo"
 						className="img-logo"
+						onClick={() => navigate(navValues.home)}
 					/>
 				</Link>
 			</div>

@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import currencyFormatter from "../helpers/formatCurrency";
 import defaultPhoto from "../helpers/defaultPhoto";
+import { navigationContext } from "./app";
 
-const House = ({ house }) => {
+const House = () => {
+	const { param: house } = useContext(navigationContext);
 	return (
 		<div className="row">
 			<div className="col-6">

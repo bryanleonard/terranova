@@ -6,7 +6,8 @@ import loadalStatus from "@/helpers/loadalStatus";
 import Loadal from "./loadal";
 
 
-const HouseList = ({selectedHouse}) => {
+// const HouseList = ({selectedHouse}) => {
+const HouseList = () => {
 	const { houses, setHouses, loadalState } = useHouses();
 
 	if (loadalState !== loadalStatus.loaded) {
@@ -21,6 +22,7 @@ const HouseList = ({selectedHouse}) => {
 				address: "32 Valley Way, Newark",
 				country: "United States of America",
 				price: 23000,
+				description: "This 3-bedroom, 2-bathroom home has its original hardwood floors, dated kitchen, and unfinished basement waiting for your vision. Nestled in a neighborhood with Newark's characteristic grit, the property reflects the city's challenges. The backyard needs TLC, and the detached garage shows its age, but there's off-street parking and room to make it your own!"
 			},
 		]);
 	};
@@ -48,7 +50,8 @@ const HouseList = ({selectedHouse}) => {
 					
 					<tbody>	
 						{houses.map(h => (
-							<HouseRowMem key={h.id} props={h} selectHouse={selectedHouse} />)
+							<HouseRowMem key={h.id} props={h} />)
+							// <HouseRowMem key={h.id} props={h} selectHouse={selectedHouse} />)
 						)}
 					</tbody>
 				</table>
