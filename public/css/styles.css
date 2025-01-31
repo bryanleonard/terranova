@@ -1,56 +1,78 @@
 body {
-    background: #f8f5e8;
+	background: #f8f5e8;
+}
+
+.footer {
+	height: 2rem;
+}
+
+.fancy {
+	background: url("/floor-tile.png");
+	height: 1rem;
+	border-bottom: 1px solid #b3bab9;
+}
+
+.container {
+	background: linear-gradient(to bottom, #fff, transparent);
+	border-left: 1px solid transparent; /* Set a default width for the border */
+	border-image: linear-gradient(to bottom, #b3bab9, transparent) 1;
+	border-right: 1px solid transparent; /* Set a default width for the border */
+  	border-image: linear-gradient(to bottom, #b3bab9, transparent) 1;
 }
 
 .theme-text-color {
-    color: #92673e;
-    /* #394c3c; */
+	color: #92673e;
+	/* #394c3c; */
 }
 
 .theme-text-color-secondary {
-    color: #92673e;
+	color: #92673e;
 }
 
 tr {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .img-logo {
-    width: 100%;
-    height: auto;
-    max-width: 11.25rem;
-    background-color: #fff;
+	width: 100%;
+	height: auto;
+	max-width: 11.25rem;
+	background-color: #fff;
+	border: 1px solid #b3bab9;
+}
+
+.img-logo:hover {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .text-theme {
-  color: #92673e !important;
+	color: #92673e !important;
 }
 
 .btn-theme {
-    background-color: #92673e;
-    border-color: #7c5634;
-    color: #ffffff;
-  }
-  
-  .btn-theme:hover,
-  .btn-theme:focus {
-    background-color: #7c5634;
-    border-color: #6a482c;
-    color: #ffffff;
-  }
-  
-  .btn-theme:active {
-    background-color: #6a482c;
-    border-color: #583b24;
-    color: #ffffff;
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  }
-  
-  .btn-theme.disabled,
-  .btn-theme:disabled {
-    background-color: #92673e;
-    border-color: #7c5634;
-    color: #e0e0e0;
-    opacity: 0.65;
-  }
-  
+	background-color: #92673e;
+	border-color: #7c5634;
+	color: #ffffff;
+}
+
+.btn-theme:hover,
+.btn-theme:focus {
+	background-color: #7c5634;
+	border-color: #6a482c;
+	color: #ffffff;
+}
+
+.btn-theme:active {
+	background-color: #6a482c;
+	border-color: #583b24;
+	color: #ffffff;
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn-theme.disabled,
+.btn-theme:disabled {
+	background-color: #92673e;
+	border-color: #7c5634;
+	color: #e0e0e0;
+	opacity: 0.65;
+}

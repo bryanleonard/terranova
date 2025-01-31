@@ -1,5 +1,5 @@
 # Terranova
-A real estate proof-of-concept project.
+A real estate proof-of-concept project. TQhe UI is humble as the focus is as a primer for learning the basics of React.
 
 ------
 

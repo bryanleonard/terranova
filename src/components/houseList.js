@@ -29,7 +29,7 @@ const HouseList = () => {
 
 	return (
 		<>
-			<div className="row mb-2 blink">
+			<div className="row mb-2">
 				<div className="col">
 					<h5 className="theme-text-color-secondary text-center">
 						Your search starts here.
@@ -38,30 +38,37 @@ const HouseList = () => {
 			</div>
 
 			<div className="row">
-                <div className="col">
-				<table className={`${styles.houseList} table table-hover`}>
-					<thead>
-						<tr>
-							<td>Address</td>
-							<td>Country</td>
-							<td>Asking Price</td>
-						</tr>
-					</thead>
-					
-					<tbody>	
-						{houses.map(h => (
-							<HouseRowMem key={h.id} props={h} />)
-							// <HouseRowMem key={h.id} props={h} selectHouse={selectedHouse} />)
-						)}
-					</tbody>
-				</table>
-
-				<button className="btn btn-primary btn-theme btn-inline" onClick={addHouse}>
-					Add
-				</button>
-
-                </div>
+                <div className="col-12">
+					<table className={`${styles.houseList} table table-hover`}>
+						<thead>
+							<tr>
+								<td>Address</td>
+								<td>Country</td>
+								<td>Asking Price</td>
+							</tr>
+						</thead>
+						
+						<tbody>	
+							{houses.map(h => (
+								<HouseRowMem key={h.id} props={h} />)
+								// <HouseRowMem key={h.id} props={h} selectHouse={selectedHouse} />)
+							)}
+						</tbody>
+					</table>
+				</div>
 			</div>
+
+			<div className="row">
+
+				<div className="col-12 col-md-2 offset-md-10 col-lg-1 offset-lg-11">
+					<button className="btn btn-primary btn-theme btn-inline w-100" onClick={addHouse}>
+						Add
+					</button>
+				</div>
+	
+				
+			</div>
+
 		</>
 	);
 };

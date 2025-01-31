@@ -16,11 +16,13 @@ const { navigate } = useContext(navigationContext);
 	}, []);
 
 	return (
-		<header className={`row mb-4 mt-3 ${styles.contain}`}>
+	
+		<header className={`row mt-3 mb-4 ${styles.contain}`}>
+			
 			<div className="col-3">
 				<Link href="/">
 					<img
-						src="/logo.png"
+						src="/logo.svg"
 						alt="TERRANOVA logo"
 						className="img-logo"
 						onClick={() => navigate(navValues.home)}
