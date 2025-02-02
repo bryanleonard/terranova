@@ -89,6 +89,12 @@
       "bidder": "Buddy Rich",
       "amount": 250251,
       "id": 15
+    },
+    {
+      "house": 1,
+      "bidder": "Steven R Vaughan",
+      "amount": 255000,
+      "id": 16
     }
   ]
 }
