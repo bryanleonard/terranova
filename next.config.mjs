@@ -6,7 +6,7 @@ const nextConfig = {
   images: {
     unoptimized: true, // Required for exporting images statically
   },
-  basePath: "/terranove", // Replace with your actual repository name
+  basePath: "/terranova", // Replace with your actual repository name
   assetPrefix: "/terranova/", // Required for assets to load correctly
   // sassOptions: {
   //   implementation: 'sass-embedded'
