@@ -1,6 +1,7 @@
 {
   "name": "terranova",
   "version": "0.1.0",
+  "homepage": "https://bryanleonard.github.io/terranova",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
