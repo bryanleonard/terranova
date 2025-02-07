@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Banner from './banner';
 import HouseList from './houseList';
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import House from './house';
 import Loadal from './loadal';
 import loadalStatus from '@/helpers/loadalStatus';
@@ -18,6 +18,10 @@ const App = () => {
 	// 	// can add data validation and checks here...
 	// 	setSelectedHouse(house);
 	// }
+
+	// useEffect(() => {
+	// 	console.log("NODE_ENV:", process.env.NODE_ENV);
+	// }, []);
 	
 	const navigate = useCallback(
 		(navTo, param) => setNav({ current:  navTo, param, navigate }), 

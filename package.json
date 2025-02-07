@@ -2,10 +2,10 @@
   "name": "terranova",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bryanleonard.github.io/terranova",
+  "homepage": "/terranova",
   "scripts": {
     "predeploy": "next build",
-    "deploy": "gh-pages -d .next",
+    "deploy": "touch ./terranova/.nojekyll && gh-pages -d terranova -t true",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

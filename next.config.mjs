@@ -5,11 +5,12 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    unoptimized: true, // Disable default image optimization
+    unoptimized: isProd, // Disable optimization only in production
   },
-  assetPrefix: isProd ? '/terranova/' : '',
-  basePath: isProd ? '/terranova' : '',
-  output: 'export'
+  assetPrefix: isProd ? '/terranova/' : '', // Only set for production
+  basePath: isProd ? '/terranova' : '', // Only set for production
+  ...(isProd && { output: 'export' }) // Only apply static export in production
 };
+
 
 export default nextConfig;
