@@ -2,7 +2,7 @@
   "name": "terranova",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bryanleonard.github.io/terranova ",
+  "homepage": "https://bryanleonard.github.io/terranova",
   "scripts": {
     "predeploy": "next build",
     "deploy": "gh-pages -d .next",
