@@ -20,7 +20,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Or view a static version at [https://bryanleonard.github.io/terranova](https://bryanleonard.github.io/terranova)
+Or view a live version at [https://terranova-ochre.vercel.app/](https://terranova-ochre.vercel.app)
 
 
 
