@@ -2,12 +2,6 @@
 
 const nextConfig = {
   reactStrictMode: false,
-  output: "export", // Ensures the app is fully static
-  images: {
-    unoptimized: true, // Required for exporting images statically
-  },
-  basePath: "/terranova", // Replace with your actual repository name
-  assetPrefix: "/terranova/", // Required for assets to load correctly
   // sassOptions: {
   //   implementation: 'sass-embedded'
   // },
