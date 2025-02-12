@@ -95,6 +95,12 @@
       "bidder": "Steven R Vaughan",
       "amount": 255000,
       "id": 16
+    },
+    {
+      "house": 1,
+      "bidder": "Timmy McFiltchovic",
+      "amount": 252000,
+      "id": 17
     }
   ]
 }

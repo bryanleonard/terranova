@@ -13,14 +13,8 @@
 
     tbody {
         tr {
-            &:hover {
+            cursor: default;
 
-                td {
-                    background: rgb(255 255 255 / 80%) !important; 
-                }
-    
-            }
-            
             td {
                 background: rgb(255 255 255 / 50%);
                 box-shadow: none !important;
