@@ -1,5 +1,5 @@
 # Terranova
-A real estate proof-of-concept project. TQhe UI is humble as the focus is as a primer for learning the basics of React.
+A real estate proof-of-concept project. The UI is humble as the focus is as a primer for learning the basics of React.
 
 ------
 
@@ -18,9 +18,6 @@ Run the development server:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the results.
 
-Or view a static version at [https://bryanleonard.github.io/terranova](https://bryanleonard.github.io/terranova)
-
-
-
+Or view a live version at [https://terranova-ochre.vercel.app/](https://terranova-ochre.vercel.app)
