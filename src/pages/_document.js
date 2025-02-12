@@ -18,8 +18,11 @@ export default function Document() {
 					<Main />
 					<NextScript />
 				</div>
-				<footer className="footer text-center mt-3">
-          &copy; {currYear} Something, something, something Dark Side.</footer>
+				<footer className="footer container-fluid text-center mt-3">
+					<div className="row">
+						<div className="col pb-2">&copy; {currYear} Something, something, something Dark Side.</div>
+					</div>
+          		</footer>
 			</body>
 		</Html>
 	);
