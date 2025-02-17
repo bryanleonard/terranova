@@ -20,4 +20,4 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the results.
 
-Or view a live version at [https://terranova-ochre.vercel.app/](https://terranova-ochre.vercel.app)
+Or view a live version at [https://terranova-io.vercel.app/](https://terranova-io.vercel.app)
